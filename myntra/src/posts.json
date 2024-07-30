@@ -1,0 +1,229 @@
+[
+    {
+      "id": 1,
+      "userName": "smitha",
+      "userImage": "https://randomuser.me/api/portraits/men/17.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/42/a9/9e/42a99e6f935daa18f6c435cf95bbdaeb.jpg",
+        "https://i.pinimg.com/564x/ad/ef/06/adef063003187ae330b1223b912b0c38.jpg",
+        "https://i.pinimg.com/564x/9d/5e/41/9d5e410a890e626034960ebf18b9086e.jpg",
+        "https://i.pinimg.com/originals/f0/a8/0f/f0a80f1736de4b98a32b8d272012f4fa.jpg",
+        "https://i.pinimg.com/564x/27/c2/49/27c2495b00481e6fd0d986ffb18b9da3.jpg"
+      ],
+      "description": "Latest electronic gadget with advanced features.",
+      "bodyType": "Athletic",
+      "review": "This gadget has exceeded my expectations!",
+      "category": "Traditional",
+      "tags": ["gadget", "electronics", "tech"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 2,
+      "userName": "jane_smith",
+      "userImage": "https://randomuser.me/api/portraits/men/19.jpg",
+      "images": [
+        "https://i.pinimg.com/474x/90/7c/19/907c195fe5f71300c2f054ceeaff6cac.jpg",
+        "https://i.pinimg.com/564x/29/62/db/2962db4fcfdba8cbd5e6c222a10e1a9e.jpg",
+        "https://i.pinimg.com/564x/c2/d6/47/c2d647c8fd0cf2421ef279444d8834a9.jpg"
+
+      ],
+      "description": "Stylish and comfortable clothing for all occasions.",
+      "bodyType": "Slim",
+      "review": "Love the fit and style of this clothing.",
+      "category": "Tradition fashion Clothing",
+      "tags": ["fashion", "clothing", "style"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 3,
+      "userName": "alice_jones",
+      "userImage": "https://randomuser.me/api/portraits/men/28.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/31/88/94/31889458772282c90f4a8485ad07e64a.jpg",
+        "https://i.pinimg.com/564x/57/34/6c/57346c430299f23d9f7a9252e7b9d461.jpg",
+        "https://i.pinimg.com/564x/8f/8c/01/8f8c01ecc85fdbddbb676f7c97f8b84b.jpg",
+        "https://i.pinimg.com/564x/7a/41/8a/7a418a21d72bddcdf2b777510fe37594.jpg"
+      ],
+      "description": "Elegant home and kitchen accessories.",
+      "bodyType": "Curvy",
+      "review": "These accessories added a touch of elegance to my home.",
+      "category": "western fashion Clothing",
+      "tags": ["home", "kitchen", "accessories"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 4,
+      "userName": "bob_martin",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/cd/75/78/cd757860ac8563790bd11590ec960cb5.jpg",
+        "https://i.pinimg.com/564x/2c/d1/72/2cd172caf4c2d7fbd16cf042a0532c92.jpg",
+        "https://i.pinimg.com/564x/28/57/41/285741781f5fb4a1f2b70f19daf4a4a2.jpg",
+        "https://i.pinimg.com/564x/f5/a3/c2/f5a3c2fa4df40abab1247688060a705e.jpg",
+        "https://i.pinimg.com/564x/36/1b/8f/361b8f049663d5f35212c120f7e8918d.jpg",
+        "https://i.pinimg.com/564x/9f/77/d7/9f77d74e20e80a9af0d4455717140751.jpg"
+
+      ],
+      "description": "High-tech electronics for your daily needs.",
+      "bodyType": "Athletic",
+      "review": "Amazing quality and performance.",
+      "category": "Electronics",
+      "tags": ["electronics", "high-tech", "gadgets"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 5,
+      "userName": "susan_lee",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/56/37/a7/5637a7bc7b8185568558701eed086caf.jpg",
+        "https://i.pinimg.com/736x/76/05/a6/7605a65a8e85a8cc84955d271a49956d.jpg"
+
+      ],
+      "description": "Fashionable clothing to enhance your wardrobe.",
+      "bodyType": "None",
+      "review": "Absolutely love this piece!",
+      "category": "Clothing",
+      "tags": ["fashion", "clothing", "wardrobe"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 6,
+      "userName": "david_clark",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/41/17/06/4117060d3c75ccdce49e0e813697f4c1.jpg",
+        "https://i.pinimg.com/564x/1b/71/ac/1b71acc275474cea9dfae839f57a44b3.jpg",
+        "https://i.pinimg.com/564x/49/be/82/49be82fcc345932863cd5d9aeac44a1a.jpg"
+      ],
+      "description": "Modern and practical home and kitchen items.",
+      "bodyType": "Average",
+      "review": "Very useful and looks great in my kitchen.",
+      "category": "Home & Kitchen",
+      "tags": ["home", "kitchen", "modern"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 7,
+      "userName": "nancy_wilson",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/f5/63/0a/f5630abe1f493f19b8b63d4820a2440d.jpg",
+        "https://i.pinimg.com/564x/33/b1/c3/33b1c3999a292454bd30bf663d668476.jpg",
+        "https://i.pinimg.com/564x/9e/a8/21/9ea8218242c365e40570a66032ba93aa.jpg"
+
+      ],
+      "description": "Cutting-edge electronics for tech enthusiasts.",
+      "bodyType": "Slim",
+      "review": "Highly recommend for tech lovers.",
+      "category": "Electronics",
+      "tags": ["electronics", "tech", "gadgets"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 8,
+      "userName": "michael_taylor",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/26/15/bd/2615bdc65dc8e9161b7330427ff97536.jpg",
+        "https://i.pinimg.com/564x/5a/a6/c1/5aa6c19846c5fcf47b9ba81792daf335.jpg",
+        "https://i.pinimg.com/564x/aa/12/05/aa12056c16fe7d39de228900c1bdc8eb.jpg",
+        "https://i.pinimg.com/564x/ac/c7/08/acc70845a22b43b82e029cea6ef1ac91.jpg"
+      ],
+      "description": "Trendy and chic clothing for the modern individual.",
+      "bodyType": "Athletic",
+      "review": "Stylish and comfortable!",
+      "category": "Clothing",
+      "tags": ["fashion", "trendy", "clothing"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 9,
+      "userName": "linda_white",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/2c/e8/79/2ce879ba43eb665e84d4497e5f94dd0f.jpg",
+        "https://i.pinimg.com/736x/44/64/00/44640062c1f8fbf53ed01414ecaf9183.jpg",
+        "https://i.pinimg.com/564x/e5/eb/d5/e5ebd50b4d685a58546b64ec1ebaf821.jpg",
+        "https://i.pinimg.com/564x/a7/eb/73/a7eb73198e4e162e1b734d0915aa9788.jpg",
+        "https://i.pinimg.com/564x/b9/d8/f3/b9d8f3430574d8029e3f272fa0c3153e.jpg"
+      ],
+      "description": "Beautiful and functional home and kitchen decor.",
+      "bodyType": "Curvy",
+      "review": "Makes my home look beautiful!",
+      "category": "Home Decor",
+      "tags": ["home", "kitchen", "decor"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 10,
+      "userName": "charles_hall",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/b4/a2/00/b4a2008179e401786ce73fa58fb9496a.jpg",
+        "https://i.pinimg.com/236x/1e/56/22/1e5622c5a957f8b50815278062ae9c32.jpg",
+        "https://i.pinimg.com/564x/54/f2/52/54f252f580369ee3b2cb727dc83927bb.jpg",
+        "https://i.pinimg.com/564x/bf/fd/29/bffd29093524176b84c7d28d3a726e87.jpg"
+      ],
+      "description": "Comfortable and stylish clothing for any event.",
+      "bodyType": "Average",
+      "review": "Fits perfectly and looks great!",
+      "category": "Beach wear men",
+      "tags": ["fashion", "clothing", "style"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    },
+    {
+      "id": 11,
+      "userName": "barbara_jones",
+      "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "images": [
+        "https://i.pinimg.com/564x/aa/35/76/aa35766582684b8554ed82ac940c8cfb.jpg",
+        "https://i.pinimg.com/564x/b5/b5/ed/b5b5ed4edb58473acd867d3ca157b819.jpg",
+        "https://i.pinimg.com/564x/a1/8d/c0/a18dc01e5b5160df1c10fd201d7927b7.jpg",
+        "https://i.pinimg.com/564x/71/81/05/71810596b8d1a00bd94ee4ae8618c08c.jpg",
+        "https://i.pinimg.com/564x/45/2f/e4/452fe4d89cc674251dabdba208ba11f9.jpg",
+        "https://i.pinimg.com/564x/3a/ab/2d/3aab2d91c4ec4dcd4edea201e0152e8a.jpg"
+
+      ],
+      "description": "Innovative and elegant home and kitchen products.",
+      "bodyType": "None",
+      "review": "These products are very useful.",
+      "category": "Women Beach wear",
+      "tags": ["home", "kitchen", "elegant"],
+      "urls": [
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy",
+        "https://www.myntra.com/tunics/nayo/nayo-off-white--blue-printed-tunic/17116258/buy"
+      ]
+    }
+  ]
+  

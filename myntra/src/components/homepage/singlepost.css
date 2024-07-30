@@ -1,0 +1,221 @@
+/* General styles for post card */
+.singlepost-card {
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+  height: auto; /* Adjust height to fit content */
+  display: flex;
+  flex-direction: row;
+  font: 1em sans-serif;
+}
+
+/* Styles for post container (left and right) */
+.singlepost-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Styles for post card content */
+.singlepost-card-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styles for avatar box */
+.singlepost-avatar-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+/* Styles for avatar */
+.singlepost-avatar {
+  margin-top: 0.5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* Styles for username */
+.singlepost-username {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Styles for post info */
+.singlepost-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em; /* Updated font size */
+}
+
+.singlepost-info-item {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* Updated font family */
+  letter-spacing: 0.5px; /* Added letter spacing */
+  font-size: 2em; /* Updated font size */
+}
+
+.singlepost {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Styles for left and right sections */
+.singlepost-left {
+  background-color: rgb(187, 180, 167);
+  width: 27%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+.singlepost-right {
+  height: 100%;
+  padding: 46px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 50%;
+}
+/* Styles for URL scroller */
+.singlepost-url-scroller {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Container for images */
+.singlepost-url-images {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scrolling */
+}
+
+/* Styles for images */
+.singlepost-url-image {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles for scroll buttons */
+.scroll-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: -10px;
+}
+
+.scroll-button.right {
+  right: 280px;
+}
+
+/* Styles for URL scroller */
+.singlepost-url-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.singlepost-url-list {
+  margin-top: 10px;
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 768px) {
+  .singlepost-info {
+    margin-top: 40px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em; /* Updated font size */
+  }
+  
+  .singlepost-info-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Updated font size */
+    font-family: 'Arial', sans-serif; /* Updated font family */
+    letter-spacing: 0.5px; /* Added letter spacing */
+  }
+
+  .singlepost-card {
+    width: 90%; /* Adjust width for mobile */
+    margin: 20px auto; /* Adjust margin for mobile */
+    flex-direction: column; /* Stack divs vertically on mobile */
+  }
+
+  .singlepost-left, .singlepost-right {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height to fit content */
+    padding: 8px;
+    margin-left: 0px;
+  }
+
+  .singlepost-info {
+    margin-top: 10px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .singlepost-username {
+    font-size: 18px;
+  }
+
+  .singlepost-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .singlepost-info-item {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: large;
+  }
+
+  .singlepost-urls {
+    text-align: left;
+  }
+
+  .singlepost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0px;
+  }
+}
