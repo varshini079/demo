@@ -50,20 +50,8 @@ const FormPage = () => {
           inputProps={{ maxLength: 200 }}
           margin="normal"
         />
-        <TextField
-          fullWidth
-          select
-          label="Body Type"
-          value={bodyType}
-          onChange={(e) => setBodyType(e.target.value)}
-          margin="normal"
-        >
-          {bodyTypes.map((option) => (
-            <MenuItem key={option} value={option}>
-              {option}
-            </MenuItem>
-          ))}
-        </TextField>
+      
+       
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
           <TextField
             fullWidth
