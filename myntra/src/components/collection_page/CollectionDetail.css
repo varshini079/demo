@@ -23,7 +23,7 @@ h2 {
 .images-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-  gap: 40px; /* Space between images */
+  gap: 20px; /* Space between images */
 }
 
 .image-card {
@@ -39,7 +39,7 @@ h2 {
 
 .collection-image {
   width: 100%;
-  height: 500px; /* Adjust height as needed */
+  height: 300px; /* Adjust height as needed */
   object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
   border-bottom: 1px solid #ddd;
 }
@@ -57,4 +57,29 @@ h2 {
 
 .add-to-cart-button:hover {
   background-color: #0056b3;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .images-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row on mobile */
+  }
+
+  .collection-image {
+    height: 200px; /* Adjust height for mobile view as needed */
+  }
+  .add-to-cart-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 12px; /* Adjust font size of the title */
+    margin: 0;
+  }
 }

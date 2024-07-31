@@ -13,6 +13,12 @@ import './singlepost.css';
 import postsData from '../posts.json';
 import SimpleSlider from './slider';
 
+
+import screenshot1 from './images/Screenshot 2024-07-31 170302.png';
+import screenshot2 from './images/Screenshot 2024-07-31 175939.png';
+import screenshot3 from './images/Screenshot 2024-07-31 180141.png';
+
+const images_ss = [screenshot1, screenshot2, screenshot3];
 // Function to format the userName to remove underscores and convert to Pascal Case
 function formatUserName(userName) {
   return userName
@@ -93,7 +99,7 @@ const SinglePost = () => {
         </button>
       )}
       <div className="singlepost-url-images">
-        {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
+        {images_ss.slice(currentIndex, currentIndex + 3).map((image, index) => (
           <a href={urls[currentIndex + index]} key={index} target="_blank" rel="noopener noreferrer">
             <img src={image} alt={`Shop the Magic ${index + 1}`} className="singlepost-url-image" />
           </a>
