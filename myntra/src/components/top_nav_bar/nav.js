@@ -8,6 +8,9 @@ import { FaSearch } from 'react-icons/fa';
 import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 function TopNav() {
@@ -53,11 +56,11 @@ function TopNav() {
             </InputGroup>
           </Form>
           <Nav className="ms-auto me-3 d-flex align-items-center">
-          <Nav.Link onClick={handleProfileClick}>
-              <img src="/profile.png" alt="Profile" style={{ width: '35px', height: '35px' }} />
+            <Nav.Link onClick={handleProfileClick}>
+              <PersonIcon />
             </Nav.Link>
-            <Nav.Link href="#"><img src="/wish.png" alt="Wishlist" style={{ width: '30px', height: '25px' }} /></Nav.Link>
-            <Nav.Link href="#"><img src="/bag1.png" alt="Bag" style={{ width: '30px', height: '30px' }} /></Nav.Link>
+            <Nav.Link href="#"><FavoriteBorderIcon /></Nav.Link>
+            <Nav.Link href="#"><ShoppingBagIcon /></Nav.Link>
           </Nav>
         </NavbarCollapse>
       </Container>
