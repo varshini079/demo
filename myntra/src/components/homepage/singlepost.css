@@ -87,6 +87,7 @@
 
 .singlepost-url-scroller {
   position: relative;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -95,9 +96,13 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  align-items: center;
+  overflow: hidden;
 }
 
 .singlepost-url-image {
+  width: 150px;
+  height: auto;
   width: 150px;
   height: auto;
   object-fit: cover;
@@ -136,6 +141,8 @@
   margin-top: 10px;
   display: flex;
   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -147,6 +154,7 @@
     justify-content: center;
     font-size: 1.2em; 
   }
+
 
   .singlepost-info-item {
     display: flex;

@@ -16,3 +16,21 @@
   font-size: 16px;
   color: #555;
 }
+.drag-drop .upload-box {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-drop .upload-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drag-drop .upload-info p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
