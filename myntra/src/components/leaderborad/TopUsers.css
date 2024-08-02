@@ -1,12 +1,12 @@
 .top-users-container {
     max-width: 1000px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     padding: 20px;
   }
   
   .top-users-title {
     margin-bottom: 20px;
-    white-space: nowrap; /* Ensures the title stays on one line */
+    white-space: nowrap; 
     margin-top: 0px;
     margin-left: 20px;
     align-items: center;
@@ -15,22 +15,22 @@
   .users-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Gap between user info blocks */
+    gap: 20px; 
     justify-content: space-between;
-    border: 1px solid #ddd; /* Add border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    padding: 20px; /* Add padding for better spacing inside the box */
-    border-radius: 10px; /* Optional: round the corners */
-    background-color: #fff; /* Optional: set background color to white */
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #fff; 
   }
   
   .user-info {
-    flex: 0 1 calc(20% - 20px); /* 5 users per row (20% width minus gap) */
+    flex: 0 1 calc(20% - 20px); 
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.9rem;
-    margin-bottom: 20px; /* Margin between rows */
+    margin-bottom: 20px; 
   }
   
   .user-info p {
@@ -40,8 +40,8 @@
   }
   
   .avatar {
-    width: 100%; /* Ensure avatars take full width of user-info div */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Rounded avatar */
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
   }
   

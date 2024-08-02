@@ -100,8 +100,8 @@
   },
   {
     "id": 6,
-    "userName": "david_clark",
-    "userImage": "https://randomuser.me/api/portraits/men/55.jpg",
+    "userName": "clark",
+    "userImage": "https://randomuser.me/api/portraits/women/55.jpg",
     "images": [
       "https://i.pinimg.com/564x/41/17/06/4117060d3c75ccdce49e0e813697f4c1.jpg",
       "https://i.pinimg.com/564x/1b/71/ac/1b71acc275474cea9dfae839f57a44b3.jpg",
@@ -163,8 +163,8 @@
     },
     {
       "id": 9,
-      "userName": "linda_white",
-      "userImage": "https://randomuser.me/api/portraits/women/20.jpg",
+      "userName": "Varshitha",
+      "userImage": "https://randomuser.me/api/portraits/women/40.jpg",
       "images": [
         "https://i.pinimg.com/736x/2c/e8/79/2ce879ba43eb665e84d4497e5f94dd0f.jpg",
         "https://i.pinimg.com/736x/44/64/00/44640062c1f8fbf53ed01414ecaf9183.jpg",

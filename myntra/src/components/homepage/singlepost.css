@@ -1,15 +1,13 @@
-/* General styles for post card */
 .singlepost-card {
   width: 80%;
   margin: 30px auto;
   border-radius: 10px;
-  height: auto; /* Adjust height to fit content */
+  height: auto; 
   display: flex;
   flex-direction: row;
   font: 1em sans-serif;
 }
 
-/* Styles for post container (left and right) */
 .singlepost-container {
   display: flex;
   justify-content: space-between;
@@ -18,14 +16,12 @@
   width: 100%;
 }
 
-/* Styles for post card content */
 .singlepost-card-content {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-/* Styles for avatar box */
 .singlepost-avatar-box {
   display: flex;
   align-items: center;
@@ -33,7 +29,6 @@
   margin-top: -10px;
 }
 
-/* Styles for avatar */
 .singlepost-avatar {
   margin-top: 0.5px;
   width: 70px;
@@ -41,28 +36,26 @@
   border-radius: 50%;
 }
 
-/* Styles for username */
 .singlepost-username {
   padding: 10px;
   font-size: 20px;
   font-weight: 600;
 }
 
-/* Styles for post info */
 .singlepost-info {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 2em; /* Updated font size */
+  font-size: 2em; 
 }
 
 .singlepost-info-item {
   display: flex;
   margin-bottom: 10px;
-  font-family: 'Arial', sans-serif; /* Updated font family */
-  letter-spacing: 0.5px; /* Added letter spacing */
-  font-size: 2em; /* Updated font size */
+  font-family: 'Arial', sans-serif; 
+  letter-spacing: 0.5px;
+  font-size: 2em; 
 }
 
 .singlepost {
@@ -75,7 +68,6 @@
   gap: 20px;
 }
 
-/* Styles for left and right sections */
 .singlepost-left {
   background-color: rgb(187, 180, 167);
   width: 27%;
@@ -92,30 +84,32 @@
   align-items: center;
   width: 50%;
 }
-/* Styles for URL scroller */
+
 .singlepost-url-scroller {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
-  overflow: hidden; /* Hide overflow */
 }
 
-/* Container for images */
 .singlepost-url-images {
   display: flex;
-  gap: 10px;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for scrolling */
+  align-items: center;
+  overflow: hidden;
 }
 
-/* Styles for images */
 .singlepost-url-image {
-  width: 100px; /* Adjust size as needed */
-  height: 100px;
+  width: 150px;
+  height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin: 5px;
+  transition: transform 0.3s ease;
 }
 
-/* Styles for scroll buttons */
+.singlepost-url-image:hover {
+  transform: scale(1.1);
+}
+
 .scroll-button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -135,22 +129,15 @@
 }
 
 .scroll-button.right {
-  right: 280px;
-}
-
-/* Styles for URL scroller */
-.singlepost-url-image {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 5px;
+  right: -10px;
 }
 
 .singlepost-url-list {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
-/* Responsive styles for mobile view */
 @media (max-width: 768px) {
   .singlepost-info {
     margin-top: 40px;
@@ -158,26 +145,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.2em; /* Updated font size */
+    font-size: 1.2em; 
   }
-  
+
   .singlepost-info-item {
     display: flex;
     margin-bottom: 10px;
-    font-size: 1.2em; /* Updated font size */
-    font-family: 'Arial', sans-serif; /* Updated font family */
-    letter-spacing: 0.5px; /* Added letter spacing */
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 0.5px; 
   }
 
   .singlepost-card {
-    width: 90%; /* Adjust width for mobile */
-    margin: 20px auto; /* Adjust margin for mobile */
-    flex-direction: column; /* Stack divs vertically on mobile */
+    width: 90%; 
+    margin: 20px auto;
+    flex-direction: column; 
   }
 
   .singlepost-left, .singlepost-right {
-    width: 100%; /* Full width on mobile */
-    height: auto; /* Adjust height to fit content */
+    width: 100%; 
+    height: auto; 
     padding: 8px;
     margin-left: 0px;
   }
@@ -217,5 +204,23 @@
     justify-content: center;
     margin-top: 20px;
     gap: 0px;
+  }
+
+  .scroll-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scroll-button.left {
+    left: 0;
+  }
+
+  .scroll-button.right {
+    right: 0;
+  }
+
+  .singlepost-url-image {
+    width: 60px;
+    height: auto;
   }
 }

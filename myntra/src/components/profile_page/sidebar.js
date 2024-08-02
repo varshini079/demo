@@ -26,12 +26,12 @@ const Sidebar = () => {
       <Button
         sx={{
           display: { xs: 'block', sm: 'none' },
-          position: 'fixed',
-          top: 10,
-          left: 10,
+          position: 'relative',
+          top: 60,
+          left: 0,
           backgroundColor: '#fff',
           border: 'none',
-          padding: 10,
+          padding: 1,
           cursor: 'pointer',
           zIndex: 1001,
         }}

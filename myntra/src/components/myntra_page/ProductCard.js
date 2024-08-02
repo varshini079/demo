@@ -21,11 +21,11 @@ import {
 } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const ProductCard = ({ product, curations, addCuration }) => {
+const ProductCard = ({ product, addCuration }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [newCurationName, setNewCurationName] = useState('');
-  const [visibility, setVisibility] = useState('public'); // Default visibility
+  const [visibility, setVisibility] = useState('public'); 
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -43,11 +43,10 @@ const ProductCard = ({ product, curations, addCuration }) => {
   const handleDialogClose = () => {
     setDialogOpen(false);
     setNewCurationName('');
-    setVisibility('public'); // Reset visibility to default
+    setVisibility('public'); 
   };
 
   const handleAddCuration = (curation) => {
-    // Implement logic to add product to curation
     console.log(`Add product to ${curation}`);
     handleMenuClose();
   };
@@ -60,16 +59,22 @@ const ProductCard = ({ product, curations, addCuration }) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 500, marginBottom: '10px' }}>
+    <>
+    <Box sx={{marginTop:'15px'}}>
+    <Card sx={{ maxWidth: 270, marginBottom: '10px',height:525}}>
       <CardMedia
-        component="img"
-        height="700"
-        image={product.image}
-        alt={product.name}
-        sx={{ objectFit: 'cover' }}
-      />
+      component="img"
+      sx={{
+        width: '100%',         
+        height: '400px',       
+        objectFit: 'contain',  
+        objectPosition: 'top',
+      }}
+      image={product.image}
+      alt={product.name}
+    />
       <CardContent>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between',marginTop:'-15px' }}>
           <Typography variant="h6" component="div">
             {product.brand}
           </Typography>
@@ -101,11 +106,11 @@ const ProductCard = ({ product, curations, addCuration }) => {
         <MenuItem onClick={() => handleAddCuration('ethnic')}>Add to Ethnic</MenuItem>
         <MenuItem onClick={() => handleAddCuration('casuals')}>Add to Casuals</MenuItem>
         <MenuItem onClick={() => handleAddCuration('for home')}>Add to For Home</MenuItem>
-        <MenuItem onClick={handleDialogOpen}>Create New Curation</MenuItem>
+        <MenuItem onClick={handleDialogOpen}>Create New Collection</MenuItem>
       </Menu>
 
       <Dialog open={dialogOpen} onClose={handleDialogClose} maxWidth="sm" fullWidth>
-        <DialogTitle>Create New Curation</DialogTitle>
+        <DialogTitle>Create New Collection</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
@@ -141,6 +146,8 @@ const ProductCard = ({ product, curations, addCuration }) => {
         </DialogActions>
       </Dialog>
     </Card>
+    </Box>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../backend_services/firebaseconfig';
-import './TopWardrobes.css'; // Import your CSS file for styling
+import './imagelist.css'; 
 
 const TopCollections = () => {
   const [topCollections, setTopCollections] = useState([]);

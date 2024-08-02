@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../backend_services/firebaseconfig';
-import './CollectionDetail.css'; // Create and import your CSS file for styling
+import './CollectionDetail.css'; 
 
 const CollectionDetail = () => {
   const { id } = useParams();
@@ -12,11 +12,11 @@ const CollectionDetail = () => {
   useEffect(() => {
     const fetchCollection = async () => {
       try {
-        console.log(`Fetching collection with ID: ${id}`); // Debug log
+        console.log(`Fetching collection with ID: ${id}`); 
         const docRef = doc(db, 'wardrobe_collections', id);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-          console.log('Document data:', docSnap.data()); // Debug log
+          console.log('Document data:', docSnap.data()); 
           setCollection({ id: docSnap.id, ...docSnap.data() });
         } else {
           console.error('No such document!');
@@ -50,7 +50,7 @@ const CollectionDetail = () => {
       <div className="images-section">
         {collection.images.map((image, index) => (
           <div className="image-card" key={index}>
-            <img src={image} alt={`Image ${index + 1}`} className="collection-image" />
+            <img src={image} alt="img" className="collection-image" />
             <button className="add-to-cart-button">Add to Cart</button>
           </div>
         ))}

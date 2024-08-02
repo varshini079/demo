@@ -1,7 +1,5 @@
 .top-collections-container {
-  max-width: 1000px;
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Center the collections-wrapper within the container */
+  padding: 20px;
 }
 .header {
   font-size: 24px;
@@ -13,14 +11,14 @@
   display: flex;
   justify-content: center;
   width:90%;
-  margin-left: 80px; /* Add margin left for website view */
+  margin-left: 80px;
 
 }
 
 .collection-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .collection-box {
@@ -29,7 +27,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
-  max-width: 28%; /* Adjusts to 3 per row */
+  max-width: 28%; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,6 +44,7 @@
   height: 60px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: auto;
 }
 
 .collection-details {
@@ -59,20 +58,20 @@
 
 @media (max-width: 960px) {
   .collection-box {
-    max-width: 45%; /* Adjusts to 2 per row */
-    margin-left: 30px;
+    max-width: 45%; 
+    margin-left: 50px;
   }
 }
 
 @media (max-width: 600px) {
   .collections-wrapper {
-    justify-content: center; /* Center items in mobile view */
-    margin-left: 30px;
-    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+    width: 110%;
   }
 
   .collection-box {
-    max-width: 90%; /* Makes the collection box larger in mobile view */
+    max-width: 90%;
     margin-left: 0;
     margin-right: 0;
   }

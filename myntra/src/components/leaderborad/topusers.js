@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../backend_services/firebaseconfig';
-import './TopUsers.css'; // Import your CSS file for styling
+import './TopUsers.css'; 
 
 const TopUsers = () => {
   const [topUsers, setTopUsers] = useState([]);

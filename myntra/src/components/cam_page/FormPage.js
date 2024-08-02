@@ -50,30 +50,8 @@ const FormPage = () => {
           inputProps={{ maxLength: 200 }}
           margin="normal"
         />
-        <TextField
-          fullWidth
-          select
-          label="Body Type"
-          value={bodyType}
-          onChange={(e) => setBodyType(e.target.value)}
-          margin="normal"
-        >
-          {bodyTypes.map((option) => (
-            <MenuItem key={option} value={option}>
-              {option}
-            </MenuItem>
-          ))}
-        </TextField>
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-          <TextField
-            fullWidth
-            label="Category"
-            value={categoryInput}
-            onChange={(e) => setCategoryInput(e.target.value)}
-            margin="normal"
-          />
-          <Button onClick={handleAddCategory} sx={{ ml: 2, mt: 2 }} variant="contained">+</Button>
-        </Box>
+       
+        
         <Box sx={{ mb: 2 }}>
           {categories.map((category, index) => (
             <Chip key={index} label={category} sx={{ mr: 1, mb: 1 }} />

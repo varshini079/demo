@@ -4,16 +4,14 @@ import ImageListItem from '@mui/material/ImageListItem';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../backend_services/firebaseconfig';
-import './UserCollectionCard.css'; // Import your CSS file for styling
+import './topwardrobes.css'; 
 
 const TopCollections = () => {
   const [topCollections, setTopCollections] = useState([]);
 
-  // Define media query breakpoints
   const isSmallScreen = useMediaQuery('(max-width:600px)');
   const isMediumScreen = useMediaQuery('(max-width:960px)');
 
-  // Determine the number of columns based on the screen size
   const getCols = () => {
     if (isSmallScreen) return 2;
     if (isMediumScreen) return 2;
@@ -26,11 +24,11 @@ const TopCollections = () => {
       const collectionsSnapshot = await getDocs(collectionsRef);
       const collections = collectionsSnapshot.docs.map(doc => {
         const data = doc.data();
-        const score = 4 * data.likes + 2 * data.views;
+        const score = 6 * data.likes + 2 * data.views;
         return { id: doc.id, ...data, score };
       });
 
-      const sortedCollections = collections.sort((a, b) => b.score - a.score);
+      const sortedCollections = collections.sort((a, b) => a.score - b.score);
       setTopCollections(sortedCollections);
     };
 
@@ -56,7 +54,7 @@ const TopCollections = () => {
                     <img
                       srcSet={`${image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                       src={`${image}?w=164&h=164&fit=crop&auto=format`}
-                      alt={`Image ${index + 1}`}
+                      alt="img"
                       loading="lazy"
                     />
                   </ImageListItem>

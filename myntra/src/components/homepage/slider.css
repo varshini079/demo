@@ -14,19 +14,18 @@
 
   @media (max-width: 960px) {
     .slider-container.medium-screen {
-        max-width: 45%; /* Adjusts to 2 per row */
+        max-width: 45%; 
         margin-left: 30px;
     }
   }
   .slider-container {
-  width: 80%; /* Customize based on your needs */
-  margin: 0 auto; /* Centers the slider horizontally */
+  width: 80%; 
+  margin: 0 auto; 
 }
 
 .slider-image-wrapper {
-  /* Padding and margin styles here */
-  margin-left: 10px; /* Highlighted: Adjust this as needed */
-  padding: 20px; /* Highlighted: Adjust this as needed */
+  margin-left: 10px; 
+  padding: 20px; 
 }
 
 .slider-image {
@@ -37,7 +36,7 @@
 
   @media (max-width: 600px) {
     .slider-container.small-screen {
-        justify-content: center; /* Center items in mobile view */
+        justify-content: center; 
         margin-left: 50px;
         width: 100%;    }
   }

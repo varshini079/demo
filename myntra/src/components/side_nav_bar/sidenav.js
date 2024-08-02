@@ -33,7 +33,7 @@ export default function SideNav() {
         {[
           { text: 'Leader Board', path: '/leaderboard' },
           { text: 'Camera', path: '/camera' },
-          { text: 'Curations', path: '/collections' },
+          { text: 'Collections', path: '/collections' },
           { text: 'Rewards', path: '/rewards' },
         ].map(({ text, path }, index) => (
           <ListItem key={text} disablePadding>

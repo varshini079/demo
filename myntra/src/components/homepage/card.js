@@ -16,7 +16,7 @@ function formatUserName(userName) {
   return userName
       .split('_')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join('');
+      .join(' ');
 }
 
 const Post = ({ id, userImage, userName, images, description }) => {
@@ -24,16 +24,19 @@ const Post = ({ id, userImage, userName, images, description }) => {
     <Box className="post-container">
       <Card variant="outlined" className="post-card">
         <CardContent orientation="horizontal" className="post-card-content">
+        <Link to={`/user/:userId`}>
           <Box className="post-avatar-box">
             <img
               size="sm"
               src={userImage}
+              alt="img"
               className="post-avatar"
             />
             <Typography className="post-username">
               {formatUserName(userName)}
             </Typography>
           </Box>
+        </Link>
         </CardContent>
         <CardOverflow sx={{ borderRadius: 1 }}>
           <SimpleSlider images={images} />
@@ -44,7 +47,7 @@ const Post = ({ id, userImage, userName, images, description }) => {
               variant="body2"
               color="text.secondary"
               sx={{ display: 'flex', alignItems: 'center', color: 'black', marginTop: '15px', justifyContent: 'center' }}
-            > 
+            >
               {description}
             </Typography>
           </CardContent>

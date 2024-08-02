@@ -12,8 +12,11 @@ import ShareIcon from '@mui/icons-material/Share';
 import './singlepost.css';
 import postsData from '../posts.json';
 import SimpleSlider from './slider';
+import screenshot1 from './images/Screenshot 2024-07-31 170302.png';
+import screenshot2 from './images/Screenshot 2024-07-31 175939.png';
+import screenshot3 from './images/Screenshot 2024-07-31 180141.png';
 
-// Function to format the userName to remove underscores and convert to Pascal Case
+const images_ss = [screenshot1, screenshot2, screenshot3];
 function formatUserName(userName) {
   return userName
       .split('_') 
@@ -30,7 +33,7 @@ const SinglePost = () => {
     return <div>Post not found</div>;
   }
 
-  const { userImage, userName, images, description, bodyType, review, category, tags, urls } = post;
+  const { userImage, userName, images, description, review, tags, urls } = post;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -78,35 +81,33 @@ const SinglePost = () => {
           </Box>
 
           <Box className="singlepost-right">
-  <CardContent className="singlepost-info" sx={{ fontSize: '2em' }}>
-    <Typography className="singlepost-info-item"><strong>Body Type:</strong> {bodyType}</Typography>
-    <Typography className="singlepost-info-item"><strong>Review:</strong> {review}</Typography>
-    <Typography className="singlepost-info-item"><strong>Category:</strong> {category}</Typography>
-    <Typography className="singlepost-info-item"><strong>Tags:</strong> {tags.join(', ')}</Typography>
-  </CardContent>
+              <CardContent className="singlepost-info" sx={{ fontSize: '2em' }}>
+                <Typography className="singlepost-info-item"><strong>Review:</strong> {review}</Typography>
+                <Typography className="singlepost-info-item"><strong>Tags:</strong> {tags.join(', ')}</Typography>
+              </CardContent>
 
-  <CardContent className="singlepost-url-list">
-    <div className="singlepost-url-scroller">
-      {currentIndex > 0 && (
-        <button className="scroll-button left" onClick={handlePrev}>
-          &lt;
-        </button>
-      )}
-      <div className="singlepost-url-images">
-        {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
-          <a href={urls[currentIndex + index]} key={index} target="_blank" rel="noopener noreferrer">
-            <img src={image} alt={`Shop the Magic ${index + 1}`} className="singlepost-url-image" />
-          </a>
-        ))}
-      </div>
-      {currentIndex + 3 < images.length && (
-        <button className="scroll-button right" onClick={handleNext}>
-          &gt;
-        </button>
-      )}
-    </div>
-  </CardContent>
-</Box>
+              <CardContent className="singlepost-url-list">
+                <div className="singlepost-url-scroller">
+                  {currentIndex > 0 && (
+                    <button className="scroll-button left" onClick={handlePrev}>
+                      &lt;
+                    </button>
+                  )}
+                  <div className="singlepost-url-images">
+                    {images_ss.slice(currentIndex, currentIndex + 3).map((image, index) => (
+                      <a href={urls[currentIndex + index]} key={index} target="_blank" rel="noopener noreferrer">
+                        <img src={image} alt={`Shop the Magic ${index + 1}`} className="singlepost-url-image" />
+                      </a>
+                    ))}
+                  </div>
+                  {currentIndex + 3 < images.length && (
+                    <button className="scroll-button right" onClick={handleNext}>
+                      &gt;
+                    </button>
+                  )}
+                </div>
+              </CardContent>
+          </Box>
         </Box>
       </Card>
     </Box>

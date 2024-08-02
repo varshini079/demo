@@ -1,9 +1,7 @@
-// App.js
-
 import React, { useState } from 'react';
 import DragNdrop from './DragNdrop'; 
 import FormPage from './FormPage'; 
-import './App.css';
+import './cam.css';
 
 function CamPage() {
   const [filesSelected, setFilesSelected] = useState(false);

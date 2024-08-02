@@ -63,8 +63,8 @@ const SimpleSlider = ({ images, postId }) => {
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1} sx={{
             color:'black' ,
-            fontWeight: 'bold', // or a number like 500, 600, etc.
-            letterSpacing: '0.5px', // adjust spacing as needed
+            fontWeight: 'bold', 
+            letterSpacing: '0.5px', 
           }}>
             Next
             {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
@@ -73,8 +73,8 @@ const SimpleSlider = ({ images, postId }) => {
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0} sx={{
             color: 'black',
-            fontWeight: 'bold', // or a number like 500, 600, etc.
-            letterSpacing: '0.5px', // adjust spacing as needed
+            fontWeight: 'bold', 
+            letterSpacing: '0.5px', 
           }}>
             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
             Back

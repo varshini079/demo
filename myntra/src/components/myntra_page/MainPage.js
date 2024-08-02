@@ -84,7 +84,7 @@ const MainPage = () => {
         <FilterSidebar />
         <Grid container spacing={1}> {/* Reduce spacing */}
           {products.map((product, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Grid item xs={12} sm={3} md={4} lg={4} key={index}>
               <ProductCard product={product} curations={curations} addCuration={addCuration} />
             </Grid>
           ))}

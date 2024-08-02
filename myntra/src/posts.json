@@ -143,7 +143,7 @@
     },
     {
       "id": 8,
-      "userName": "michael_taylor",
+      "userName": "michael_taylor varsha",
       "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
       "images": [
         "https://i.pinimg.com/564x/26/15/bd/2615bdc65dc8e9161b7330427ff97536.jpg",
@@ -163,7 +163,7 @@
     },
     {
       "id": 9,
-      "userName": "linda_white",
+      "userName": "varsha",
       "userImage": "https://randomuser.me/api/portraits/men/18.jpg",
       "images": [
         "https://i.pinimg.com/736x/2c/e8/79/2ce879ba43eb665e84d4497e5f94dd0f.jpg",
@@ -172,7 +172,7 @@
         "https://i.pinimg.com/564x/a7/eb/73/a7eb73198e4e162e1b734d0915aa9788.jpg",
         "https://i.pinimg.com/564x/b9/d8/f3/b9d8f3430574d8029e3f272fa0c3153e.jpg"
       ],
-      "description": "Beautiful and functional home and kitchen decor.",
+      "description": "Beautiful and functional home and  decor.",
       "bodyType": "Curvy",
       "review": "Makes my home look beautiful!",
       "category": "Home Decor",

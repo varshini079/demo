@@ -1,44 +1,26 @@
-// StandardImageList.js
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
-export default function StandardImageList() {
-  return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-  );
-}
-
-const itemData = [
+export const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: 'https://i.pinimg.com/236x/9a/4f/1d/9a4f1de49933b83be208e22c4ad61cf2.jpg',
     title: 'Breakfast',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: 'https://i.pinimg.com/474x/88/81/7d/88817dc28d0bbe36927c12c3ae79f7e2.jpg',
     title: 'Burger',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: 'https://i.pinimg.com/236x/aa/f9/6c/aaf96cfa51fb7005456bf59efc8e5e40.jpg',
     title: 'Camera',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: 'https://i.pinimg.com/236x/ed/d6/2f/edd62f74316a8772d6b2f1060134d617.jpg',
     title: 'Coffee',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: 'https://i.pinimg.com/236x/d5/7e/ac/d57eac8918b4e8deb4799ed668fa0670.jpg',
     title: 'Hats',
   },
   {
@@ -70,3 +52,22 @@ const itemData = [
     title: 'Bike',
   },
 ];
+
+const StandardImageList = ({ data }) => {
+  return (
+    <ImageList sx={{ width: 500, height: 450,border:'black' }} cols={3} rowHeight={164}>
+      {data.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+            loading="lazy"
+            alt={item.title}
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
+  );
+}
+
+export default StandardImageList;

@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from './card';
-import './card.css';
 import  postData from  '../posts.json';
 // card component and its css is imported 
 // FetchPosts component that maps over the postData of json file and passes the props to the Post component

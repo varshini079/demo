@@ -15,7 +15,7 @@ const FilterSidebar = () => {
     <Box>
       {/* Toggle Button for Mobile */}
       <IconButton
-        sx={{ display: { xs: 'block', sm: 'none' }, margin: '10px' }}
+        sx={{ display: { xs: 'block', sm: 'none' } ,marginLeft: '-3px',marginTop: '-9px',marginRight:'-10px'}}
         onClick={toggleSidebar}
       >
         <FilterListIcon />

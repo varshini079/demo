@@ -4,7 +4,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../backend_services/firebaseconfig';
-
+import './topwar.css';
 const TopCollections = () => {
   const [topCollections, setTopCollections] = useState([]);
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const TopCollections = () => {
         });
 
         const sortedCollections = collections.sort((a, b) => b.score - a.score);
-        console.log('Fetched Collections:', sortedCollections); // Debug log
+        console.log('Fetched Collections:', sortedCollections); 
         setTopCollections(sortedCollections);
       } catch (error) {
         console.error('Error fetching collections:', error);
@@ -32,13 +32,13 @@ const TopCollections = () => {
   }, []);
 
   const handleClick = (id) => {
-    console.log('Navigating to collection with ID:', id); // Debug log
+    console.log('Navigating to collection with ID:', id); 
     navigate(`/collection/${id}`);
   };
 
   return (
     <div className="top-collections-container">
-      <h2 className="header">Curations</h2>
+      <h2 className="header">Collections</h2>
       <div className="collection-list">
         {topCollections.map((collection) => (
           <div className="collection-box" key={collection.id} onClick={() => handleClick(collection.id)}>
@@ -54,7 +54,7 @@ const TopCollections = () => {
                   <img
                     srcSet={`${image}?w=300&h=200&fit=crop&auto=format&dpr=2 2x`}
                     src={`${image}?w=300&h=200&fit=crop&auto=format`}
-                    alt={`Image ${index + 1}`}
+                    alt="pic"
                     loading="lazy"
                   />
                 </ImageListItem>
@@ -66,5 +66,4 @@ const TopCollections = () => {
     </div>
   );
 };
-
 export default TopCollections;
